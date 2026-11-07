@@ -1,0 +1,90 @@
+Categorical columns: ['Gender', 'Customer Type', 'Type of Travel', 'Class']
+Training shape: (559708, 21)
+Validation shape: (139927, 21)
+Categorical features: ['Gender', 'Customer Type', 'Type of Travel', 'Class']
+Numerical features: ['Age', 'Flight Distance', 'Inflight wifi service', 'Departure/Arrival time convenient', 'Ease of Online booking', 'Gate location', 'Food and drink', 'Online boarding', 'Seat comfort', 'Inflight entertainment', 'On-board service', 'Leg room service', 'Baggage handling', 'Checkin service', 'Cleanliness', 'Departure Delay in Minutes', 'Arrival Delay in Minutes']
+Training baseline models to locate decision boundaries...
+
+--- Testing Feature: Age ---
+LR_AUC: 0.9204489041763133
+nCatBoost_AUC: 0.9572541488661251
+
+--- Testing Feature: Flight Distance ---
+LR_AUC: 0.9204597723460759
+nCatBoost_AUC: 0.9573284433526387
+
+--- Testing Feature: Inflight wifi service ---
+LR_AUC: 0.9197046705512275
+nCatBoost_AUC: 0.9571657895554345
+
+--- Testing Feature: Departure/Arrival time convenient ---
+LR_AUC: 0.9200805298994862
+nCatBoost_AUC: 0.9573160522816487
+
+--- Testing Feature: Ease of Online booking ---
+LR_AUC: 0.9206514077223835
+nCatBoost_AUC: 0.9573901136615339
+
+--- Testing Feature: Gate location ---
+LR_AUC: 0.9205287369369559
+nCatBoost_AUC: 0.9573037652964415
+
+--- Testing Feature: Food and drink ---
+LR_AUC: 0.9204698223146762
+nCatBoost_AUC: 0.9573967643912642
+
+--- Testing Feature: Online boarding ---
+LR_AUC: 0.9178883688845959
+nCatBoost_AUC: 0.9573597925211702
+
+--- Testing Feature: Seat comfort ---
+LR_AUC: 0.9204738303415634
+nCatBoost_AUC: 0.957249519325027
+
+--- Testing Feature: Inflight entertainment ---
+LR_AUC: 0.9204294765546353
+nCatBoost_AUC: 0.9573711302150696
+
+--- Testing Feature: On-board service ---
+LR_AUC: 0.9199821359330143
+nCatBoost_AUC: 0.9572255856994523
+
+--- Testing Feature: Leg room service ---
+LR_AUC: 0.9203351831127538
+nCatBoost_AUC: 0.9572824225377485
+
+--- Testing Feature: Baggage handling ---
+LR_AUC: 0.9203833057155055
+nCatBoost_AUC: 0.957297058488685
+
+--- Testing Feature: Checkin service ---
+LR_AUC: 0.9198384439580911
+nCatBoost_AUC: 0.9572826581275369
+
+--- Testing Feature: Cleanliness ---
+LR_AUC: 0.920337418784316
+nCatBoost_AUC: 0.9572390584969408
+
+--- Testing Feature: Departure Delay in Minutes ---
+LR_AUC: 0.9204531538974233
+nCatBoost_AUC: 0.957428490068904
+
+--- Testing Feature: Arrival Delay in Minutes ---
+LR_AUC: 0.9203740731203477
+nCatBoost_AUC: 0.9573669855109271
+
+--- Testing Feature: Gender ---
+LR_AUC: 0.9204564802969384
+nCatBoost_AUC: 0.9574310346869341
+
+--- Testing Feature: Customer Type ---
+LR_AUC: 0.9203185672557171
+nCatBoost_AUC: 0.957138169368705
+
+--- Testing Feature: Type of Travel ---
+LR_AUC: 0.9199534366064108
+nCatBoost_AUC: 0.9571769454613418
+
+--- Testing Feature: Class ---
+LR_AUC: 0.9204389589142856
+nCatBoost_AUC: 0.9572680248666903

@@ -1,0 +1,186 @@
+Categorical columns: ['Gender', 'Customer Type', 'Type of Travel', 'Class']
+Training shape: (559708, 21)
+Validation shape: (139927, 21)
+Categorical features: ['Gender', 'Customer Type', 'Type of Travel', 'Class']
+Numerical features: ['Age', 'Flight Distance', 'Inflight wifi service', 'Departure/Arrival time convenient', 'Ease of Online booking', 'Gate location', 'Food and drink', 'Online boarding', 'Seat comfort', 'Inflight entertainment', 'On-board service', 'Leg room service', 'Baggage handling', 'Checkin service', 'Cleanliness', 'Departure Delay in Minutes', 'Arrival Delay in Minutes']
+Training baseline models to locate decision boundaries...
+
+--- Testing Feature: Age ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ -29.59195468  -11.36115384   28.46811101 ...   38.76154507   39.20957797
+ -151.34752111]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ -29.59195468  -11.36115384   28.46811101 ...   38.76154507   39.20957797
+ -151.34752111]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9204489041763133
+nCatBoost_AUC: 0.9572541488661251
+
+--- Testing Feature: Flight Distance ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-3608.52551983  3640.04676702 -1732.47953666 ...  4441.61066995
+ -3527.40268807  1742.61003189]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-3608.52551983  3640.04676702 -1732.47953666 ...  4441.61066995
+ -3527.40268807  1742.61003189]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9204597723460759
+nCatBoost_AUC: 0.9573284433526387
+
+--- Testing Feature: Inflight wifi service ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[12.25041822  1.32169915 -5.84284875 ... 12.19912055  3.8208274
+  4.35755583]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[12.25041822  1.32169915 -5.84284875 ... 12.19912055  3.8208274
+  4.35755583]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9197046705512275
+nCatBoost_AUC: 0.9571657895554345
+
+--- Testing Feature: Departure/Arrival time convenient ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.47712331 -2.51520422  0.06604943 ... -2.59866639 -0.49343413
+  4.49649567]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.47712331 -2.51520422  0.06604943 ... -2.59866639 -0.49343413
+  4.49649567]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9200805298994862
+nCatBoost_AUC: 0.9573160522816487
+
+--- Testing Feature: Ease of Online booking ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 8.90721748  1.03747893  0.04721833 ...  7.1962921   7.23685688
+ -1.50495783]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 8.90721748  1.03747893  0.04721833 ...  7.1962921   7.23685688
+ -1.50495783]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9206514077223835
+nCatBoost_AUC: 0.9573901136615339
+
+--- Testing Feature: Gate location ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.37272483 -7.26397477  4.63816185 ...  2.96929949 -1.79352848
+ 14.9358058 ]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.37272483 -7.26397477  4.63816185 ...  2.96929949 -1.79352848
+ 14.9358058 ]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9205287369369559
+nCatBoost_AUC: 0.9573037652964415
+
+--- Testing Feature: Food and drink ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-2.86390669  0.1957998   9.95626774 ...  2.57991041  2.86851964
+  5.88064523]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-2.86390669  0.1957998   9.95626774 ...  2.57991041  2.86851964
+  5.88064523]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9204698223146762
+nCatBoost_AUC: 0.9573967643912642
+
+--- Testing Feature: Online boarding ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.15176653 10.53157347  6.9517028  ...  2.62684583 14.91554389
+  2.71568206]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 7.15176653 10.53157347  6.9517028  ...  2.62684583 14.91554389
+  2.71568206]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9178883688845959
+nCatBoost_AUC: 0.9573597925211702
+
+--- Testing Feature: Seat comfort ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.65398523  5.74624873  3.01732234 ... -0.64889223 -1.58938872
+ -3.99267041]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.65398523  5.74624873  3.01732234 ... -0.64889223 -1.58938872
+ -3.99267041]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9204738303415634
+nCatBoost_AUC: 0.957249519325027
+
+--- Testing Feature: Inflight entertainment ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 3.93127085 -3.18119074  8.24958208 ...  4.85622938  8.53271982
+  7.95286525]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 3.93127085 -3.18119074  8.24958208 ...  4.85622938  8.53271982
+  7.95286525]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9204294765546353
+nCatBoost_AUC: 0.9573711302150696
+
+--- Testing Feature: On-board service ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.53014296  3.52338973 13.62590367 ...  5.6101318   9.15748257
+  2.24643324]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 0.53014296  3.52338973 13.62590367 ...  5.6101318   9.15748257
+  2.24643324]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9199821359330143
+nCatBoost_AUC: 0.9572255856994523
+
+--- Testing Feature: Leg room service ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-0.17047207 -2.16777235  8.42542828 ...  1.07182692  6.05581681
+  2.06635452]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-0.17047207 -2.16777235  8.42542828 ...  1.07182692  6.05581681
+  2.06635452]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9203351831127538
+nCatBoost_AUC: 0.9572824225377485
+
+--- Testing Feature: Baggage handling ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.99101068  9.78090207 11.49204694 ... -3.16520225 10.90230015
+ -4.11014614]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 2.99101068  9.78090207 11.49204694 ... -3.16520225 10.90230015
+ -4.11014614]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9203833057155055
+nCatBoost_AUC: 0.957297058488685
+
+--- Testing Feature: Checkin service ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 6.72493398  7.20987518  4.82176209 ... -0.40866691 -4.19377613
+  2.9193669 ]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 6.72493398  7.20987518  4.82176209 ... -0.40866691 -4.19377613
+  2.9193669 ]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9198384439580911
+nCatBoost_AUC: 0.9572826581275369
+
+--- Testing Feature: Cleanliness ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 9.67997951 -2.07377379  5.27288867 ... 12.80070778 -3.61476185
+  7.35199688]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[ 9.67997951 -2.07377379  5.27288867 ... 12.80070778 -3.61476185
+  7.35199688]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.920337418784316
+nCatBoost_AUC: 0.9572390584969408
+
+--- Testing Feature: Departure Delay in Minutes ---
+/tmp/ipykernel_23/839619492.py:32: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-18.14937068 -23.62826635 -21.45572751 ...  45.80854497   9.51958689
+   6.80054666]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_corr.iloc[chosen_rows, X_corr.columns.get_loc(feature_name)] = noise_vals
+/tmp/ipykernel_23/3846399482.py:31: FutureWarning: Setting an item of incompatible dtype is deprecated and will raise an error in a future version of pandas. Value '[-18.14937068 -23.62826635 -21.45572751 ...  45.80854497   9.51958689
+   6.80054666]' has dtype incompatible with int64, please explicitly cast to a compatible dtype first.
+  X_train_cb_corr.iloc[mask] = X_train_corr.iloc[mask]
+LR_AUC: 0.9204531538974233
+nCatBoost_AUC: 0.957428490068904
+
+--- Testing Feature: Arrival Delay in Minutes ---
+LR_AUC: 0.9203740731203477
+nCatBoost_AUC: 0.9573669855109271
+
+--- Testing Feature: Gender ---
+LR_AUC: 0.9204564802969384
+nCatBoost_AUC: 0.9574310346869341
+
+--- Testing Feature: Customer Type ---
+LR_AUC: 0.9203185672557171
+nCatBoost_AUC: 0.957138169368705
+
+--- Testing Feature: Type of Travel ---
+LR_AUC: 0.9199534366064108
+nCatBoost_AUC: 0.9571769454613418
+
+--- Testing Feature: Class ---
+LR_AUC: 0.9204389589142856
+nCatBoost_AUC: 0.9572680248666903
