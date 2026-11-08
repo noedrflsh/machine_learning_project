@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -225,3 +226,9 @@ __marimo__/
 /.venv
 /pyvenv.cfg
 >>>>>>> 7495aee9 (naming changes and .gitignore added)
+=======
+/.ipynb_checkpoints
+/dataset
+/.venv
+/pyvenv.cfg
+>>>>>>> master
