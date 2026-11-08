@@ -232,3 +232,5 @@ __marimo__/
 /.venv
 /pyvenv.cfg
 >>>>>>> master
+# keeping older versions of code, currently unused in case i need them
+/misc
