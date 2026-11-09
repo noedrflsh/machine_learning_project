@@ -1,0 +1,171 @@
+\documentclass[11pt,a4paper]{article}
+% =================================================================
+% DS5006 Team Project --- Report Template
+% - Replace every grey guidance block with your own text, then
+%   delete the guidance. Search for \guide to find them all.
+% - Page limit: \PAGELIMIT pages, excluding references, the
+%   contribution statement, the AI-use summary and appendices.
+% - Do not change the margins, font size or section structure.
+% =================================================================
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs,tabularx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[numbers]{natbib}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black}
+\setlist{itemsep=1pt,topsep=3pt}
+
+\newcommand{\PAGELIMIT}{\textcolor{red!75!black}{\textbf{[8]}}} % instructor sets this
+\newcommand{\guide}[1]{{\color{gray!85!black}\small\itshape #1\par}}
+
+% ----------------------- Fill these in ---------------------------
+\newcommand{\teamname}{Team Name}
+\newcommand{\projecttitle}{A Title That States the Question, Not the Method}
+% ------------------------------------------------------------------
+
+\title{\textbf{\projecttitle}\\[4pt]\large DS5006 Machine Learning --- Team Project Report}
+\author{\teamname\\[2pt]
+\small Member One (Roll No.) \quad Member Two (Roll No.)\\
+\small Member Three (Roll No.) \quad Member Four (Roll No.)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\guide{150--200 words. State the questions, the data, the manipulations you performed, and what you found --- including negative findings. A reader should know your answer to each question from the abstract alone.}
+\end{abstract}
+
+% =================================================================
+\section{Introduction and scientific questions}
+\guide{Why is this problem worth studying? Keep the motivation to one or two paragraphs. Then state each question exactly as approved in your proposal (or as re-approved).}
+
+\begin{description}[leftmargin=1.2em,style=nextline]
+\item[Q1.] \guide{The question, in one sentence.}
+  \textbf{Hypothesis:} \guide{What you expected, and why.}
+  \textbf{Falsified if:} \guide{The result that would count as ``no''.}
+\item[Q2.] \guide{As above.}
+\item[Q3.] \guide{Optional third question.}
+\end{description}
+
+% =================================================================
+\section{Related work}
+\guide{Half a page at most. Cite the papers or results that motivate your questions and say how your study differs. Do not write a survey.}
+
+% =================================================================
+\section{Data}
+\guide{Source and licence; size (rows $\times$ columns); target variable; feature types. For image/text data: exactly how it was converted to tabular form (model, layer, dimensionality). Preprocessing steps, missing-value handling, and the train/validation/test split (random, grouped, temporal?) with justification. Anything unusual about the data that affects interpretation.}
+
+\begin{table}[h]
+\centering
+\caption{Dataset summary. \guide{Adapt as needed.}}
+\begin{tabular}{@{}lr@{}}
+\toprule
+Property & Value \\
+\midrule
+Rows (train / val / test) & -- / -- / -- \\
+Features (numerical / categorical) & -- / -- \\
+Target & -- \\
+Class balance or target range & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =================================================================
+\section{Methodology}
+\guide{Methodology adopted to answer the questions}
+% \guide{The neural network(s) you study: architecture, loss, optimiser, regularisation, how hyperparameters were chosen (and on which split). The non-deep baseline and how it was tuned. Put full hyperparameter tables in the appendix.}
+
+% =================================================================
+\section{Experimental design}
+\guide{One subsection per question. This section is where most marks are won or lost.}
+
+\subsection{Design for Q1}
+\guide{
+\textbf{Manipulation:} what you varied and over what range.\\
+\textbf{Held fixed:} everything that must not change for the comparison to be valid.\\
+\textbf{Measurement:} metric(s); number of seeds; how uncertainty is reported (e.g.\ mean $\pm$ standard deviation, confidence interval); what size of difference you treat as real, and why.\\
+\textbf{Threats to validity:} what else could produce the effect you are looking for, and how the design rules it out (or does not).}
+
+\subsection{Design for Q2}
+\guide{As above.}
+
+% =================================================================
+\section{Results}
+\guide{One subsection per question, in the same order. Lead each with the direct answer to the question, then the evidence. Every figure and table must show uncertainty across seeds and must be referenced in the text. State which script produced it (e.g.\ in the caption: \texttt{code/exp\_q1.py}).}
+
+\subsection{Q1}
+\guide{Answer first, then evidence.}
+
+\begin{figure}[h]
+\centering
+\fbox{\parbox[c][3.5cm][c]{0.6\linewidth}{\centering\small figure placeholder}}
+\caption{\guide{What is plotted, what the error bars are, how many seeds. Produced by \texttt{code/...}.}}
+\end{figure}
+
+\subsection{Q2}
+\guide{Answer first, then evidence.}
+
+% =================================================================
+\section{Failure analysis}
+\guide{Where does your model fail, and why? Examine specific failure cases or subgroups (classes, feature ranges, data sources). Compare with the baseline's failures. ``The accuracy was 87\%'' is not a failure analysis.}
+
+% =================================================================
+\section{Discussion and limitations}
+\guide{What do your results mean for each question? Then, explicitly: what your results do \emph{not} show. Consider generalisation beyond this dataset, confounds you could not rule out, and effects too small to detect with your number of seeds.}
+
+% =================================================================
+\section{Conclusion}
+\guide{A short paragraph. One sentence per question with the answer.}
+
+% =================================================================
+\section*{Reproducibility statement}
+\guide{Entry point command; expected total run time and hardware used; seeds; where the data comes from. Confirm that every table and figure in this report is regenerated by the entry script.}
+
+% ------------- Not counted toward the page limit -----------------
+\clearpage
+\section*{Contribution statement}
+\guide{To be agreed by all members. Every member is examined on the whole project in the oral exam regardless of this table.}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{@{}lXr@{}}
+\toprule
+Member & Main contributions (code, experiments, writing) & Share (\%) \\
+\midrule
+Member One & & \\
+Member Two & & \\
+Member Three & & \\
+Member Four & & \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section*{AI-use summary}
+\guide{Half a page. Summarise how AI tools were used (tools, purposes, rough extent) and how outputs were verified. The full record is in \texttt{AI\_USE\_LOG.md}. If no AI tools were used, state that.}
+
+\begin{center}
+\begin{tabularx}{\linewidth}{@{}lXl@{}}
+\toprule
+Tool(s) & Used for & Log entries \\
+\midrule
+ & & \\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\bibliographystyle{plainnat}
+\begin{thebibliography}{9}
+\bibitem{example}
+A.~Author and B.~Author.
+\newblock Title of the paper.
+\newblock In \emph{Venue}, Year.
+\end{thebibliography}
+
+\appendix
+\section{Hyperparameters and additional results}
+\guide{Full hyperparameter tables, search ranges, additional figures. Not counted toward the page limit, but graders are not required to read it: anything essential must be in the main text.}
+
+\end{document}
